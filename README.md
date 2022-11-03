@@ -23,6 +23,9 @@ Der isochrone Transfer wird für Audio verwendet. In Full-Speed können je Milli
 Hi-Speed je Mikroframe (125 us) bis zu 1024 Byte. Im Prinzip könnten mehrere Endpunkte gleichzeitig genutzt werden, aber bei Full Speed ist
 man mit einem einzigen Endpunkt schon bei 81% der maximalen Gesamtdatenrate. Isochroner Transfer ist für Full-Speed und Hi-Speed Geräte
 möglich.
+Bei 16 bit Audiodaten und 192 kS/s hat man 384 kByte/s pro Kanal, oder 384 Byte/ms. Selbst Stereo lässt sich also noch über Full-Speed
+übertragen. Hi-Speed oder USB 3.0 braucht man also so schnell nicht; bei 48 kHz SR kann ich theoretisch 10 Mikrofone parallel über Full Speed
+anschließen.
 
 
 USB links
