@@ -27,6 +27,13 @@ Bei 16 bit Audiodaten und 192 kS/s hat man 384 kByte/s pro Kanal, oder 384 Byte/
 übertragen. Hi-Speed oder USB 3.0 braucht man also so schnell nicht; bei 48 kHz SR kann ich theoretisch 10 Mikrofone parallel über Full Speed
 anschließen.
 
+USB Audio hat mindestens 2 Klassen, UAC1 und UAC2 oder Class 1 und Class 2. Alte Windowsversionen unterstützten nur Class 1, Class 2 gibt es
+erst seit einer bestimmten Windows-10 (!) Version. Class 1 kann 24 bit bis zu 96 kHz, aber höhere Sampleraten gehen nur mit 16 bit. Class 2
+unterstützt auch 192 kHz SR bei 24 bit Genauigkeit. Android kann kein Class 2. Generell unterstützt UAC1 nur Full Speed (mehr nicht) und ein
+1 ms Frame (was anderes macht Full Speed ja auch nie). UAC2 kann High Speed - ab USB 2.0 steht High Speed zur Verfügung also gibt es keine
+sinnvolle Anwendung von UAC2 auf USB1.x Geräten. UAC2 ist nicht rückwärtskompatibel zu UAC1, d.h. ein Gerät muss sich entweder als UAC2 oder als
+UAC1 Gerät anmelden. Beides geht nicht. UAC1 ist schnell genug für 192 kHz SR, 16 bit stereo (pro Endpoint), nicht aber für mehr. 
+
 
 USB links
 https://www.esp32.com/viewtopic.php?t=8732
